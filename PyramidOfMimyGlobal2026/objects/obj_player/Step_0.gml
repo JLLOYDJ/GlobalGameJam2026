@@ -1,10 +1,12 @@
-//check if away from mousex and mousey
-distanceX = targetX - x;
-distanceY = targetY - y;
 
-if(distanceX > 5) {
-	x++;
+//check if object is in a circle, if yes, stop moving
+if(!point_in_circle(x, y, targetX, targetY, 32)) {
+	move_towards_point(targetX, targetY, 5);
+} else {
+	speed = 0;
 }
-else if(distanceX < -5) {
-	x--;
+//change target to walk towards 
+if(mouse_check_button_pressed(mb_left)){
+	targetX = mouse_x;
+	targetY = mouse_y;	
 }

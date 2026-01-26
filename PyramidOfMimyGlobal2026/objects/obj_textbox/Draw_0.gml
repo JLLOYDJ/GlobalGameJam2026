@@ -1,4 +1,4 @@
-//accepting input
+/*//accepting input
 enter_key = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("E"));
 up_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 down_key = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
