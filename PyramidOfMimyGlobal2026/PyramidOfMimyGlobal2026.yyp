@@ -43,6 +43,7 @@
     {"id":{"name":"scr_equipment","path":"scripts/scr_equipment/scr_equipment.yy",},},
     {"id":{"name":"scr_itemControl","path":"scripts/scr_itemControl/scr_itemControl.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
+    {"id":{"name":"spr_option_selector","path":"sprites/spr_option_selector/spr_option_selector.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_redSquare","path":"sprites/spr_redSquare/spr_redSquare.yy",},},
   ],

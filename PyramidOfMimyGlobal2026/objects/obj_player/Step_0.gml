@@ -1,3 +1,4 @@
+#region movement
 
 //check if object is in a circle, if yes, stop moving
 if(!point_in_circle(x, y, targetX, targetY, 32)) {
@@ -10,3 +11,5 @@ if(mouse_check_button_pressed(mb_left)){
 	targetX = mouse_x;
 	targetY = mouse_y;	
 }
+
+#endregion

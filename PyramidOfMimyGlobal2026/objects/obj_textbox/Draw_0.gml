@@ -1,13 +1,13 @@
-/*//accepting input
+//accepting input
 enter_key = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("E"));
 up_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 down_key = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
 
 
-textbox_x = global.cam_x + window_get_width/2 + textbox_width/4;
-textbox_y = global.cam_y + window_get_height/2 + textbox_height;
+textbox_x = window_get_width/2 + textbox_width/4; //used to have global.camX & global.camY
+textbox_y = window_get_height/2 + textbox_height;
 
-draw_set_font(font_smaller);
+//draw_set_font(font_smaller);
 
 //setup
 if(setup == false) {
@@ -90,7 +90,7 @@ if (draw_char = text_length[page] && page == page_number-1) {
 		//the option box
 		//numbers and calculations are INCREDIBLY janky
 		var _op_w = string_width(txt_options[_op]) + _op_bord*2;
-		draw_sprite_ext(spr_textb_options, 0, _txtb_x+16,
+		draw_sprite_ext(spr_menu, 0, _txtb_x+16,
 			_txtb_y-_op_space*option_number+_op_space*_op,
 			(_op_w/textbox_spr_w), ((_op_space-1)/textbox_spr_h),
 			0, c_white, 1

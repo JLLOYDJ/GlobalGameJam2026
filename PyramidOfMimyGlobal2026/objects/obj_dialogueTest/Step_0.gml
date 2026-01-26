@@ -15,14 +15,14 @@ if(!instance_exists(obj_textbox)) {
 		&& questDone == false && takenQuest == questName) {
 	questDone = true;
 	}
-}
+}*/
 //interaction
 
 	if (point_in_rectangle(obj_player.x, obj_player.y, bbox_left-50,bbox_top-50,bbox_right+50,bbox_bottom+50)){
-		 if ((E || (position_meeting(mouse_x, mouse_y, obj_NPC) && left_click)) && !instance_exists(obj_textbox)
-			&& !instance_exists(obj_par_UI) && text_id != "null" && text_id != "") {
+		 if ((E || (position_meeting(mouse_x, mouse_y, self) && left_click)) && !instance_exists(obj_textbox)
+		 && text_id != "null" && text_id != "") {
 		
-			if(hasQuest == true && questDone == true && questOver == false) {
+			/*if(hasQuest == true && questDone == true && questOver == false) {
 				questOver = true;
 						repeat(questAmount) {
 							if(ds_grid_get(global.playerInv, 1, i) > 1) {
@@ -53,5 +53,5 @@ if(!instance_exists(obj_textbox)) {
 				scr_create_textbox(text_id);
 				
 				image_speed = 1;
-		//}
-//}
+		}
+}
