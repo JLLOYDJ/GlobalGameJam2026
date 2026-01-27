@@ -1,2 +1,2 @@
-addItem(global.playerInv, itemName, itemAmount, itemDesc, itemSprite, itemScript, itemStatus, itemBonus, isEquipped);
+addItem(global.playerInv, itemName, itemDesc, itemSprite, itemScript);
 	instance_destroy();

@@ -38,7 +38,7 @@ if(ds_grid_get(myItems, 0, 0) == 0) {
 	global.invEndAt = 0;
 }
 
-if(ds_grid_get(global.playerEquip, 0, 0) != 0) {
+/*if(ds_grid_get(global.playerEquip, 0, 0) != 0) {
 	noWeapon = false;
 } else {
 	noWeapon = true;
@@ -47,4 +47,4 @@ if(ds_grid_get(global.playerEquip, 0, 1) != 0) {
 	noArmour = false;
 } else {
 	noArmour = true;
-}
+}*/  // NO LONGER NEEDED

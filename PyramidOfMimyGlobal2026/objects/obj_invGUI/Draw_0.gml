@@ -9,9 +9,9 @@ draw_sprite_ext(invSprite, 0, boxleft, boxtop,
 draw_set_colour(myColour);
 //draw_set_font(font_smaller);
 
-draw_text(boxleft + textBorder, boxtop + textBorder, "Image");
-draw_text(boxleft + 125, boxtop + textBorder, "Name");
-draw_text(boxleft + 215, boxtop + textBorder, "Amount");
+//draw_text(boxleft + textBorder, boxtop + textBorder, "Image");
+draw_text(boxleft + 110, boxtop + textBorder, "INVENTORY");
+//draw_text(boxleft + 215, boxtop + textBorder, "Amount");
 
 itemLeftStart = boxleft + 120;
 itemTopStart = boxtop + 48;
@@ -24,10 +24,10 @@ if(!isEmpty) { //only draw items if theres items to draw
 			if(j == 0) { //name
 				draw_text(itemLeftStart -30, itemTopStart + (i*32), ds_grid_get(myItems, 0, i + global.scrolledAmount));
 			}
-			if(j == 1) { //amount
-				draw_text(itemLeftStart + 140, itemTopStart + (i*32), ds_grid_get(myItems, 1, i + global.scrolledAmount));
-			}
-			if(j == 3) { //sprite
+			//if(j == 1) { //amount
+				//draw_text(itemLeftStart + 140, itemTopStart + (i*32), ds_grid_get(myItems, 1, i + global.scrolledAmount));
+			//}
+			if(j == 2) { //sprite
 				draw_sprite(ds_grid_get(myItems, j, i + global.scrolledAmount), 0, boxleft + 24, itemTopStart + (i*32));
 			}
 		}
@@ -58,7 +58,7 @@ if(isEmpty) {
 } else {
 	draw_text_ext(boxright + textBorder, 
 	boxbottom-itemDescHeightPure + textBorder, 
-	ds_grid_get(myItems, 2, global.itemSelected), 24, 
+	ds_grid_get(myItems, 1, global.itemSelected), 24, 
 	itemDescWidthPure - textBorder);
 }
 
