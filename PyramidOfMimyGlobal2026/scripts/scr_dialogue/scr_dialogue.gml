@@ -20,7 +20,17 @@ function scr_game_text(_text_id) {
 			scr_text("Output text 1");
 			scr_text("Output text 2");
 				scr_options("Option name", "option text id");
-			break;	
+			break;
+			
+		case "interaction test":
+			scr_text("You see a red box.");
+				scr_options("Touch it", "touch");
+				scr_options("Walk away", "cancel");
+			break;
+			
+		case "touch":
+			obj_InteractionTest.image_index = 1;
+			scr_text("The box turns green.");
 	}
 }
 			
