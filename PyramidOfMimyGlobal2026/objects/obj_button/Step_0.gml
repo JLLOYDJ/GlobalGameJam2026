@@ -1,5 +1,13 @@
+//replacing mouse enter/mouse leave events since te dynamically shaped buttons mean that gets awks
+
+
+
+
+
+
+
 //changing the buttons depending on what object is in them
-if(ds_grid_get(global.playerInv, 5, global.itemSelected) != "object" && myText == "Use [E]") {
+/*if(ds_grid_get(global.playerInv, 5, global.itemSelected) != "object" && myText == "Use [E]") {
 	myText = "Equip [E]";
 }
 if(ds_grid_get(global.playerInv, 5, global.itemSelected) == "object" && myText == "Equip [E]") {
@@ -54,8 +62,8 @@ if(qButton) {
 	}
 }*/ //<---- MOVED TO OBJ_INVENTORY
 
-if(myText == "Destroy [Q]") {
+/*if(myText == "Destroy [Q]") {
 	if(ds_grid_get(global.playerInv, 7, global.itemSelected) == true) {
 		image_index = 1;
 	}
-} 
+}*/

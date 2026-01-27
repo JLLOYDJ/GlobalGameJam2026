@@ -21,6 +21,19 @@ function scr_game_text(_text_id) {
 			scr_text("Output text 2");
 				scr_options("Option name", "option text id");
 			break;	
+			
+		case "Greeting":
+			scr_text("Hello, how are you?");
+				scr_options("I'm fine, thanks", "Good");
+				scr_options("BAD", "Bad");
+			break;
+		
+		case "Good":
+			scr_text("That's good to hear!");
+			break;
+		case "Bad":
+			scr_text("LOL");
+			break;
 	}
 }
 			

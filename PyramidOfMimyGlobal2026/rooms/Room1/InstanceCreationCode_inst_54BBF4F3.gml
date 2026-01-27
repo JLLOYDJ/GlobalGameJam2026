@@ -1,1 +1,1 @@
-text_id = "text id";
+text_id = "Greeting";
