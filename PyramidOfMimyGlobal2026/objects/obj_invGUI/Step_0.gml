@@ -2,7 +2,7 @@ menuDown = mouse_wheel_down() || keyboard_check_pressed(vk_down) || keyboard_che
 menuUp = mouse_wheel_up() || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 
 if(menuDown) {
-	audio_play_sound(snd_menuMove, 1, false);
+	//audio_play_sound(snd_menuMove, 1, false);
 	global.itemSelected = clamp(++global.itemSelected, 0, ds_grid_height(myItems) -1);
 	
 	if(global.itemSelected >= global.invEndAt) {
@@ -15,7 +15,7 @@ if(menuDown) {
 	}
 }
 if(menuUp) {
-	audio_play_sound(snd_menuMove, 1, false);
+	//audio_play_sound(snd_menuMove, 1, false);
 	global.itemSelected = clamp(--global.itemSelected, 0, ds_grid_height(myItems) -1);
 	
 	if(global.itemSelected < global.scrolledAmount) {

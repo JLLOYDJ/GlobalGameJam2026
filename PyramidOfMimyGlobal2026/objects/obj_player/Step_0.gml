@@ -1,7 +1,7 @@
 #region movement
 
-//if in dialogue, cant move and cant choose a new place to move
-if (!instance_exists(obj_textbox)){
+//if UI open, cant move and cant choose a new place to move
+if (!instance_exists(obj_par_UI)){
 	//check if object is in a circle, if yes, stop moving
 	if(!point_in_circle(x, y, targetX, targetY, 32)) {
 		move_towards_point(targetX, targetY, 5);

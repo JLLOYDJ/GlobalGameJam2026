@@ -1,7 +1,6 @@
 global.playerInvWidth = 8;
-global.playerInvHeight = 12;
 
-global.inv_x = camera_get_view_x(view_camera[0]) + (camera_get_view_width(view_camera[0]) / 2);
+global.inv_x = camera_get_view_x(view_camera[0]);
 global.inv_y = camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) / 2);
 
 
@@ -12,10 +11,13 @@ global.playerInv = ds_grid_create(global.playerInvWidth, 1);
 //name/type/bonus/sprite/script
 global.playerEquipWidth = 5;
 global.playerEquip = ds_grid_create(global.playerEquipWidth, 2);
-equipItem(global.playerEquip, "Sword", "weapon", -1, spr_blank, "");
 
 
-//addItem(global.playerInv, "Stupid sword", 1, "sword of get absolutely fucked up", spr_sword, handaxe(), "weapon", 10, false);
+openInv = keyboard_check_pressed(ord("i"));
+closeInv = keyboard_check_pressed(vk_escape);
+canOpen = !instance_exists(obj_invGUI) && !instance_exists(obj_par_UI)
+
+addItem(global.playerInv, "Stupid sword", 1, "sword of get absolutely fucked up", spr_option_selector, "", "object", 10, false);
 /*addItem(global.playerInv, "Magic Orb", 1, "It glows", spr_testBall, "", "armour", 14, false);
 addItem(global.playerInv, "Circle", 1, "It is a circle", spr_testBall, "", "object", 2, false);
 addItem(global.playerInv, "Red ball", 1, "It's a red ball", spr_testBall, handaxe(), "weapon", 9, false);

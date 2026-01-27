@@ -6,8 +6,15 @@ emptyMessage = "You have no items.";
 noArmour = true;
 noWeapon = true;
 invSprite = spr_menu;
-invWidth = 200;
-invHeight = 400;
+
+invWidthPure = 300;
+invHeightPure = 300;
+invWidth = 300/sprite_get_width(invSprite);
+invHeight = 300/sprite_get_height(invSprite);
+itemDescWidthPure = 250;
+itemDescHeightPure = 250;
+itemDescWidth = 250/sprite_get_width(invSprite);
+itemDescHeight = 250/sprite_get_height(invSprite);
 
 global.itemSelected = 0;
 global.scrolledAmount = 0; //allows for scrolling
