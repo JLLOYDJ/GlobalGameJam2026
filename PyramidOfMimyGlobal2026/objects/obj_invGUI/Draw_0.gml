@@ -1,13 +1,9 @@
 /// @desc draw inv on screen
-//the box around the inventory
-var boxleft = global.inv_x;
-var boxtop = global.inv_y;
-var boxright = global.inv_x+invWidthPure;
-var boxbottom = global.inv_y+invHeightPure;
+
 
 //draw_rectangle(boxleft,boxtop,boxright,boxbottom,20); //testing the box vars
 
-draw_sprite_ext(invSprite, 0, global.inv_x, global.inv_y, 
+draw_sprite_ext(invSprite, 0, boxleft, boxtop, 
 				invWidth, invHeight, //may need to add back /get_sprite_height(invSprite) and change variable back
 				0, c_white, 1);
 draw_set_colour(myColour);
@@ -49,7 +45,7 @@ if(!isEmpty) { //only draw items if theres items to draw
 
 //drawing description box next to inv
 draw_sprite_ext(invSprite, 0, 
-			boxright, global.inv_y, 
+			boxright, boxbottom-itemDescHeightPure, 
 			itemDescWidth,itemDescHeight, //may need to add back / get_sprite_height()
 			0, c_white, 1);
 			
@@ -57,12 +53,13 @@ draw_sprite_ext(invSprite, 0,
 //writing descriptions
 if(isEmpty) {
 	draw_text_ext(boxright + textBorder, 
-	global.inv_y, emptyMessage, 32, 
-	itemDescWidth - textBorder);
+	boxbottom-itemDescHeightPure + textBorder, 
+	emptyMessage, 32, itemDescWidth - textBorder);
 } else {
 	draw_text_ext(boxright + textBorder, 
-	global.inv_y, ds_grid_get(myItems, 2, global.itemSelected), 32, 
-	itemDescWidth - textBorder);
+	boxbottom-itemDescHeightPure + textBorder, 
+	ds_grid_get(myItems, 2, global.itemSelected), 24, 
+	itemDescWidthPure - textBorder);
 }
 
 //drawing equipment box above inv

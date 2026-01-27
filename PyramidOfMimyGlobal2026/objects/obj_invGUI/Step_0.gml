@@ -28,8 +28,8 @@ if(menuUp) {
 if(ds_grid_get(myItems, 0, 0) != 0) {
 	isEmpty = false;
 	global.invEndAt = ds_grid_height(myItems);
-	if(ds_grid_height(myItems) >= floor((sprite_height - (textBorder*3)) / 32)) {
-		global.invEndAt = floor((sprite_height - (textBorder*3)) / 32);
+	if(ds_grid_height(myItems) >= floor((invHeightPure - (textBorder*3)) / 32)) { //invHeight used to be sprite_height
+		global.invEndAt = floor((invHeightPure - (textBorder*3)) / 32);
 	}
 }
 

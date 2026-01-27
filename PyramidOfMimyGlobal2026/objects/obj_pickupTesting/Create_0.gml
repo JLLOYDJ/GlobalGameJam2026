@@ -1,5 +1,5 @@
 itemName = "Triangle";
-itemAmount = "2";
+itemAmount = 2;
 itemDesc = "lala";
 itemSprite = spr_redSquare;
 itemScript = "";
