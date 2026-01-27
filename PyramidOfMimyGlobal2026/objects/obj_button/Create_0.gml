@@ -5,3 +5,7 @@ buttonHeight = 40;
 buttonSprite = spr_menu;
 buttonX = 0;
 buttonY = 0;
+buttontop = buttonX - buttonWidth/2;
+buttonleft = buttonY - buttonHeight;
+buttonbottom = buttonX + buttonHeight/sprite_get_height(buttonSprite);
+buttonright = buttonY + buttonWidth/sprite_get_height(buttonSprite);
