@@ -7,3 +7,4 @@ window_center();
 view_camera[0] = view_camera[0];
 
 start = true;
+layer_sequence_create("Sequences", 640, 360, seq_roomchangestart);

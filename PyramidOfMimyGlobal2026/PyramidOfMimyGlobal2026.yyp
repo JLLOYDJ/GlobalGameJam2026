@@ -36,6 +36,7 @@
   },
   "name":"PyramidOfMimyGlobal2026",
   "resources":[
+    {"id":{"name":"obj_blackscreen","path":"objects/obj_blackscreen/obj_blackscreen.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
@@ -50,7 +51,8 @@
     {"id":{"name":"scr_dialogue","path":"scripts/scr_dialogue/scr_dialogue.yy",},},
     {"id":{"name":"scr_equipment","path":"scripts/scr_equipment/scr_equipment.yy",},},
     {"id":{"name":"scr_itemControl","path":"scripts/scr_itemControl/scr_itemControl.yy",},},
-    {"id":{"name":"seq_roomchange","path":"sequences/seq_roomchange/seq_roomchange.yy",},},
+    {"id":{"name":"seq_roomchangestart","path":"sequences/seq_roomchangestart/seq_roomchangestart.yy",},},
+    {"id":{"name":"spr_blackfade","path":"sprites/spr_blackfade/spr_blackfade.yy",},},
     {"id":{"name":"spr_blank","path":"sprites/spr_blank/spr_blank.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
