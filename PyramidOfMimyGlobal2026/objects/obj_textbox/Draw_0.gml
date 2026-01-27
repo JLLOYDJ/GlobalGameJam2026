@@ -4,8 +4,8 @@ up_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 down_key = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
 
 
-textbox_x = window_get_width/2 + textbox_width/4; //used to have global.camX & global.camY
-textbox_y = window_get_height/2 + textbox_height;
+textbox_x =  window_get_width/2 + textbox_width/4; //used to have global.camX & global.camY
+textbox_y =  window_get_height/2 + textbox_height;
 
 //draw_set_font(font_smaller);
 
