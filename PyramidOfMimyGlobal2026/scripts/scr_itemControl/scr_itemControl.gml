@@ -1,8 +1,8 @@
 //add an item to a grid
-function addItem(_gridToAdd, _itemName, _itemAmount, _itemDesc, _itemSprite, _itemScript, _itemStatus, _itemBonus, _isEquipped) {
+function addItem(_gridToAdd, _itemName, _itemDesc, _itemSprite, _itemScript) {
 	//case 1- already in inventory 
 	//is it equipment? if not stack
-	if(_itemStatus == "object") {
+	/*if(_itemStatus == "object") {
 		for(i = 0; i < ds_grid_height(_gridToAdd); i++) 
 		{
 			if(ds_grid_get(_gridToAdd, 0, i) == _itemName) {
@@ -10,7 +10,7 @@ function addItem(_gridToAdd, _itemName, _itemAmount, _itemDesc, _itemSprite, _it
 				return true;
 			}
 		}
-	}
+	}*/ //NO LONGER NEED ITEM AMOUNTS OR STACKING
 	
 	//case 2 - its not in the inventory
 	if(ds_grid_get(_gridToAdd, 0, 0) != 0) {
@@ -20,13 +20,9 @@ function addItem(_gridToAdd, _itemName, _itemAmount, _itemDesc, _itemSprite, _it
 	//filling out the grid spot
 	itemSpot = ds_grid_height(_gridToAdd) - 1;
 	ds_grid_set(_gridToAdd, 0, itemSpot, _itemName);
-	ds_grid_set(_gridToAdd, 1, itemSpot, _itemAmount);
-	ds_grid_set(_gridToAdd, 2, itemSpot, _itemDesc);
-	ds_grid_set(_gridToAdd, 3, itemSpot, _itemSprite);
-	ds_grid_set(_gridToAdd, 4, itemSpot, _itemScript);
-	ds_grid_set(_gridToAdd, 5, itemSpot, _itemStatus);
-	ds_grid_set(_gridToAdd, 6, itemSpot, _itemBonus);
-	ds_grid_set(_gridToAdd, 7, itemSpot, _isEquipped);
+	ds_grid_set(_gridToAdd, 1, itemSpot, _itemDesc);
+	ds_grid_set(_gridToAdd, 2, itemSpot, _itemSprite);
+	ds_grid_set(_gridToAdd, 3, itemSpot, _itemScript);
 	
 	return true;
 

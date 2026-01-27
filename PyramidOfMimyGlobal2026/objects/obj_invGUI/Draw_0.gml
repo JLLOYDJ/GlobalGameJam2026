@@ -1,38 +1,42 @@
 /// @desc draw inv on screen
 
 
-draw_self();
+//draw_rectangle(boxleft,boxtop,boxright,boxbottom,20); //testing the box vars
+
+draw_sprite_ext(invSprite, 0, boxleft, boxtop, 
+				invWidth, invHeight, //may need to add back /get_sprite_height(invSprite) and change variable back
+				0, c_white, 1);
 draw_set_colour(myColour);
-draw_set_font(font_smaller);
+//draw_set_font(font_smaller);
 
-draw_text(bbox_left + textBorder, bbox_top + textBorder, "Image");
-draw_text(bbox_left + 125, bbox_top + textBorder, "Name");
-draw_text(bbox_left + 215, bbox_top + textBorder, "Amount");
+//draw_text(boxleft + textBorder, boxtop + textBorder, "Image");
+draw_text(boxleft + 110, boxtop + textBorder, "INVENTORY");
+//draw_text(boxleft + 215, boxtop + textBorder, "Amount");
 
-itemLeftStart = bbox_left + 120;
-itemTopStart = bbox_top + 48;
+itemLeftStart = boxleft + 120;
+itemTopStart = boxtop + 48;
 
 
 if(!isEmpty) { //only draw items if theres items to draw
-	for(i = 0; i < global.invEndAt; i++) {
-		for(j = 0; j < global.playerInvWidth; j++) { //displaying information from the ds grid
+	for(var i = 0; i < global.invEndAt; i++) {
+		for(var j = 0; j < global.playerInvWidth; j++) { //displaying information from the ds grid
 			invOnScreen = i; 
 			if(j == 0) { //name
 				draw_text(itemLeftStart -30, itemTopStart + (i*32), ds_grid_get(myItems, 0, i + global.scrolledAmount));
 			}
-			if(j == 1) { //amount
-				draw_text(itemLeftStart + 140, itemTopStart + (i*32), ds_grid_get(myItems, 1, i + global.scrolledAmount));
-			}
-			if(j == 3) { //sprite
-				draw_sprite(ds_grid_get(myItems, j, i + global.scrolledAmount), 0, bbox_left + 24, itemTopStart + (i*32));
+			//if(j == 1) { //amount
+				//draw_text(itemLeftStart + 140, itemTopStart + (i*32), ds_grid_get(myItems, 1, i + global.scrolledAmount));
+			//}
+			if(j == 2) { //sprite
+				draw_sprite(ds_grid_get(myItems, j, i + global.scrolledAmount), 0, boxleft + 24, itemTopStart + (i*32));
 			}
 		}
 	}
 	
 	//drawing selector box
-	draw_rectangle(bbox_left+textBorder, 
+	draw_rectangle(boxleft+textBorder, 
 		itemTopStart + ((global.itemSelected - global.scrolledAmount)*32), 
-		bbox_right - textBorder, 
+		boxright - textBorder, 
 		itemTopStart + ((global.itemSelected - global.scrolledAmount)*32)+32, 
 		true
 		);
@@ -40,30 +44,28 @@ if(!isEmpty) { //only draw items if theres items to draw
 
 
 //drawing description box next to inv
-draw_sprite(spr_itemBox, 0, 
-			bbox_right + sprite_get_xoffset(spr_itemBox), 
-			camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) / 2) + 25);
+draw_sprite_ext(invSprite, 0, 
+			boxright, boxbottom-itemDescHeightPure, 
+			itemDescWidth,itemDescHeight, //may need to add back / get_sprite_height()
+			0, c_white, 1);
 			
 
 //writing descriptions
 if(isEmpty) {
-	draw_text_ext(bbox_right + 50, 
-	camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) / 2) + (25 -100), 
-	emptyMessage, 32, 
-	sprite_get_width(spr_itemBox) - textBorder
-	);
+	draw_text_ext(boxright + textBorder, 
+	boxbottom-itemDescHeightPure + textBorder, 
+	emptyMessage, 32, itemDescWidth - textBorder);
 } else {
-	draw_text_ext(bbox_right + 15, 
-	camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) / 2) + (25 -100), 
-	ds_grid_get(myItems, 2, global.itemSelected), 32, 
-	sprite_get_width(spr_itemBox) - textBorder
-	);
+	draw_text_ext(boxright + textBorder, 
+	boxbottom-itemDescHeightPure + textBorder, 
+	ds_grid_get(myItems, 1, global.itemSelected), 24, 
+	itemDescWidthPure - textBorder);
 }
 
 //drawing equipment box above inv
-draw_sprite(spr_equipmentBox, 0, 
+/*draw_sprite(spr_equipmentBox, 0, 
 				camera_get_view_x(view_camera[0]) + (camera_get_view_width(view_camera[0]) / 2),
-				bbox_top - sprite_get_yoffset(spr_equipmentBox));
+			/bbox_top - sprite_get_yoffset(spr_equipmentBox));
 
 //drawing equipment box text and boxes
 draw_text(bbox_left + textBorder, bbox_top - sprite_get_height(spr_equipmentBox) + textBorder, "Equipment");
@@ -174,4 +176,4 @@ draw_text(bbox_left - 225,
 		"INT: "+string(pINT)+"  (+"+string(floor((pINT - 10)/2))+")");
 draw_text(bbox_left - 225, 
 		bbox_top +textBorder*8+70, 
-		"CON: "+string(pCON)+"  (+"+string(floor((pCON - 10)/2))+")");
+		"CON: "+string(pCON)+"  (+"+string(floor((pCON - 10)/2))+")");*/

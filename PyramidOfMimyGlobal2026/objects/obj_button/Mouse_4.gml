@@ -1,8 +1,13 @@
 if(myText == "Use [E]") {
-		itemUse(ds_grid_get(global.playerInv, 4, global.itemSelected), ds_grid_get(global.playerInv, 6, global.itemSelected));
-		trashItem();
+		//itemUse(ds_grid_get(global.playerInv, 4, global.itemSelected), ds_grid_get(global.playerInv, 6, global.itemSelected));
+		//trashItem();
+		
+		//attach to cursor
 	}
-else if(myText == "Equip [E]") {
+	
+	
+	
+/*else if(myText == "Equip [E]") {
 	equipItem(global.playerEquip,
 			ds_grid_get(global.playerInv, 0, global.itemSelected),
 			ds_grid_get(global.playerInv, 5, global.itemSelected),
@@ -19,9 +24,9 @@ else if(myText == "Equip [E]") {
 		}
 	}
 	
-}
+}*/
 
-else if(myText == "Unequip [E]") {
+/*else if(myText == "Unequip [E]") {
 	unequipItem(ds_grid_get(global.playerInv, 5, global.itemSelected));
 	ds_grid_set(global.playerInv, 7, global.itemSelected, false);
 }
@@ -32,4 +37,4 @@ else if(myText == "Destroy [Q]") {
 	} else {
 		trashItem();
 	}
-}
+}*/

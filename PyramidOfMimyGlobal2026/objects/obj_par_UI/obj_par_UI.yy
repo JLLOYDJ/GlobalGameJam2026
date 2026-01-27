@@ -1,21 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_textbox",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_par_UI",
+  "eventList":[],
   "managed":true,
-  "name":"obj_textbox",
+  "name":"obj_par_UI",
   "overriddenProperties":[],
   "parent":{
     "name":"1 Objects",
     "path":"folders/1 Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_par_UI",
-    "path":"objects/obj_par_UI/obj_par_UI.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_menu",
-    "path":"sprites/spr_menu/spr_menu.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
