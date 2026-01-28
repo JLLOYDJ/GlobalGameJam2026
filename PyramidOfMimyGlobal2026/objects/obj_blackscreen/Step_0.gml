@@ -11,3 +11,7 @@ else if((image_alpha >= 1) && (alarmtripped == false))
 	image_alpha = 1;
 	alarm_set(0, 60);
 }
+else if(fadein == true)
+{
+	image_alpha -= fadespeed;
+}
