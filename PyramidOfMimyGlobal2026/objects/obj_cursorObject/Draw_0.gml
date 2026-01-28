@@ -1,0 +1,1 @@
+draw_sprite(objectSprite, 0, mouse_x - 24, mouse_y - 24)

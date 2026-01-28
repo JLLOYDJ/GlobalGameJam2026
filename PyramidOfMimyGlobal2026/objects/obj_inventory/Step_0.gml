@@ -6,7 +6,7 @@ global.inv_y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_c
 
 //create the inventory on screen
 if(keyboard_check_pressed(ord("I"))) {
-	if(canOpen) {
+	if(!instance_exists(obj_invGUI) && !instance_exists(obj_par_UI)) { //only open if not already open
 	instance_create_depth(global.inv_x, global.inv_y, -9999, obj_invGUI);
 
 	} else {

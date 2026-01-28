@@ -1,6 +1,12 @@
-//replacing mouse enter/mouse leave events since te dynamically shaped buttons mean that gets awks
-
-
+//making it so that clicking USE actually does something
+/*if (point_in_rectangle(mouse_x, mouse_y, buttontop, buttonleft, buttonbottom, buttonright)
+	&& mouse_check_button_pressed(mb_left)) {
+	heldObject = instance_create_depth(mouse_x, mouse_y, depth - 1, obj_cursorObject);
+	heldObject.objectName = ds_grid_get(global.playerInv, 0, global.itemSelected);
+	heldObject.objectDesc = ds_grid_get(global.playerInv, 1, global.itemSelected);
+	heldObject.objectSprite = ds_grid_get(global.playerInv, 2, global.itemSelected);
+	heldObject.objectScript = ds_grid_get(global.playerInv, 3, global.itemSelected);
+}
 
 
 
