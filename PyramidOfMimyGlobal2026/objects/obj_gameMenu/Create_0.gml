@@ -2,10 +2,9 @@
 event_inherited();
 
 options[0,0] = "Resume";
-options[0,1] = "Controls";
-options[0,2] = "Help";
-options[0,3] = "Settings";
-options[0,4] = "Exit"
+options[0,1] = "Help";
+options[0,2] = "Volume";
+options[0,3] = "Exit"
 
 options[1,0] = "Volume";
 options[1,1] = "Window Size";
@@ -22,14 +21,10 @@ options[3,2] = "75%";
 options[3,3] = "50%"
 options[3,4] = "25%"
 options[3,5] = "OFF"
-options[3,6] = "Back to settings"
+options[3,6] = "Back"
 
 
-options[4,0] = "Stats";
-options[4,1] = "Armour Class";
-options[4,2] = "Weapon bonuses";
-options[4,3] = "Combat";
-options[4,4] = "Special attack";
-options[4,5] = "Dodging";
-options[4,6] = "Chicken Jiffy";
-options[4,7] = "Back";
+options[4,0] = "Controls";
+options[4,1] = "Restart";
+options[4,2] = "Back"
+

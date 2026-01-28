@@ -62,7 +62,7 @@ if(room == rm_start) {
 			}
 			break;
 		
-			case 2: //window size
+			case 2: //window size - UNUSED FOR NOW
 			switch(pos)
 			{
 				case 0:
@@ -115,7 +115,7 @@ if(room == rm_start) {
 				break;
 				case 6:
 				//back
-				menu_level = 1;
+				menu_level = 0;
 				break;
 			}
 		

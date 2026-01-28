@@ -19,7 +19,6 @@ if(enter_key) {
 }
 
 /*options[0,0] = "Resume";
-options[0,1] = "Controls";
 options[0,2] = "Help";
 options[0,3] = "Settings";
 options[0,4] = "Exit"*/
@@ -34,23 +33,23 @@ if(room != rm_start && !instance_exists(obj_textbox)) {
 			switch(pos) {
 				case 0:
 				//resume
-				instance_destroy();
+				alarm[0] = 0.2*game_get_speed(gamespeed_fps);
 				break;
-				case 1:
+				case 9:
 				//Controls
 				//create list of controls
 				//scr_create_textbox("menu - controls");
 				break;
-				case 2:
+				case 1:
 				//Help
 				//list of options that create textboxes
 				menu_level = 4;
 				break;
-				case 3:
-				//settings
-				menu_level = 1;
+				case 2:
+				//volume
+				menu_level = 3;
 				break;
-				case 4:
+				case 3:
 				//exit
 				game_restart();
 				break;
@@ -134,7 +133,7 @@ if(room != rm_start && !instance_exists(obj_textbox)) {
 				break;
 				case 6:
 				//back
-				menu_level = 1;
+				menu_level = 0;
 				break;
 			}
 			break;
@@ -149,19 +148,19 @@ if(room != rm_start && !instance_exists(obj_textbox)) {
 				options[4,5] = "Dodging";
 				options[4,6] = "Chicken Jiffy";
 				options[4,7] = "Back"*/
-				case 0: //stats
-				scr_create_textbox("help - stats");
+				case 0: //controls
+				//scr_create_textbox("help - stats");
 				break;
 				
-				case 1: //AC
-				scr_create_textbox("help - ac");
+				case 1: //restart
+				//scr_create_textbox("help - ac");
 				break
 				
-				case 2: //weapon bonuses
-				scr_create_textbox("help - weapon bonus");
+				case 2: //back
+				menu_level = 0;
 				break;
 				
-				case 3: //combat
+				/*case 3: //combat
 				scr_create_textbox("help - combat");
 				break;
 				
@@ -179,7 +178,7 @@ if(room != rm_start && !instance_exists(obj_textbox)) {
 				
 				case 7: //back
 				menu_level = 0;
-				break;
+				break;*/
 			}
 			break;
 		

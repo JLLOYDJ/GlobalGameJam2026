@@ -58,6 +58,7 @@
     {"id":{"name":"scr_equipment","path":"scripts/scr_equipment/scr_equipment.yy",},},
     {"id":{"name":"scr_itemControl","path":"scripts/scr_itemControl/scr_itemControl.yy",},},
     {"id":{"name":"seq_roomchangestart","path":"sequences/seq_roomchangestart/seq_roomchangestart.yy",},},
+    {"id":{"name":"snd_buttonClick","path":"sounds/snd_buttonClick/snd_buttonClick.yy",},},
     {"id":{"name":"spr_blackfade","path":"sprites/spr_blackfade/spr_blackfade.yy",},},
     {"id":{"name":"spr_blank","path":"sprites/spr_blank/spr_blank.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
