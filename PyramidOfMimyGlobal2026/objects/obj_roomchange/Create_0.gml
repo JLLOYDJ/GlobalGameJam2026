@@ -1,0 +1,1 @@
+layer_sequence_create("Sequences", view_wport[0]/2, view_hport[0]/2, seq_roomchange);
