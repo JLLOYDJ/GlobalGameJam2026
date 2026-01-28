@@ -47,7 +47,9 @@
     {"id":{"name":"obj_invGUI","path":"objects/obj_invGUI/obj_invGUI.yy",},},
     {"id":{"name":"obj_par_UI","path":"objects/obj_par_UI/obj_par_UI.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_startMenu","path":"objects/obj_startMenu/obj_startMenu.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
+    {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_dialogue","path":"scripts/scr_dialogue/scr_dialogue.yy",},},
     {"id":{"name":"scr_equipment","path":"scripts/scr_equipment/scr_equipment.yy",},},
@@ -66,6 +68,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
