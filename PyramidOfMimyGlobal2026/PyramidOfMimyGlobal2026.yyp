@@ -56,6 +56,7 @@
     {"id":{"name":"spr_blank","path":"sprites/spr_blank/spr_blank.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
+    {"id":{"name":"spr_menu2","path":"sprites/spr_menu2/spr_menu2.yy",},},
     {"id":{"name":"spr_option_selector","path":"sprites/spr_option_selector/spr_option_selector.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_redSquare","path":"sprites/spr_redSquare/spr_redSquare.yy",},},

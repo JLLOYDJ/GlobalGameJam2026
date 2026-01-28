@@ -5,7 +5,7 @@ isEmpty = false;
 emptyMessage = "You have no items.";
 noArmour = true;
 noWeapon = true;
-invSprite = spr_menu;
+invSprite = spr_menu2;
 
 invWidthPure = 300;
 invHeightPure = 300;
