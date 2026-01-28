@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"1 Objects","folderPath":"folders/1 Objects.yy","name":"1 Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"UI","folderPath":"folders/1 Objects/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"2 Sprites","folderPath":"folders/2 Sprites.yy","name":"2 Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"3 Scripts","folderPath":"folders/3 Scripts.yy","name":"3 Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"4 Rooms","folderPath":"folders/4 Rooms.yy","name":"4 Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -42,6 +43,7 @@
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"obj_cursorObject","path":"objects/obj_cursorObject/obj_cursorObject.yy",},},
     {"id":{"name":"obj_dialogueTest","path":"objects/obj_dialogueTest/obj_dialogueTest.yy",},},
+    {"id":{"name":"obj_gameMenu","path":"objects/obj_gameMenu/obj_gameMenu.yy",},},
     {"id":{"name":"obj_InteractionTest","path":"objects/obj_InteractionTest/obj_InteractionTest.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"obj_invGUI","path":"objects/obj_invGUI/obj_invGUI.yy",},},
