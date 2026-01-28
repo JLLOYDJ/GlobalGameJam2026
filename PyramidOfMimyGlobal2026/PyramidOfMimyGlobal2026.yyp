@@ -36,7 +36,6 @@
   },
   "name":"PyramidOfMimyGlobal2026",
   "resources":[
-    {"id":{"name":"obj_blackscreen","path":"objects/obj_blackscreen/obj_blackscreen.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
