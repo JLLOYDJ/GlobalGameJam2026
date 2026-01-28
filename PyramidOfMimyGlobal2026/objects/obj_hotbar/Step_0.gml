@@ -5,6 +5,11 @@
 canOpen = !instance_exists(obj_invGUI) && !instance_exists(obj_gameMenu) && !instance_exists(obj_par_UI);
 invOpen = instance_exists(obj_invGUI);
 menuOpen = instance_exists(obj_gameMenu);
+menuX = (global.cam_x + global.cam_w) - 180;
+menuY = global.cam_y + _yy;
+invX = (global.cam_x + global.cam_w) - 300;
+invY = global.cam_y + _yy;
+depth = -999999999;
 
 
 //interaction
@@ -28,7 +33,7 @@ if (esc) {
 }
 
 //change appearance depending on what is being hovered over
-if(point_in_circle(mouse_x, mouse_y, menuX, menuY, 44)) { //if souching menu icon
+if(point_in_circle(mouse_x, mouse_y, menuX, menuY, 34)) { //if souching menu icon
 	menuIndex = 1;
 	if(leftClick) {
 		if(canOpen) {
@@ -41,7 +46,7 @@ if(point_in_circle(mouse_x, mouse_y, menuX, menuY, 44)) { //if souching menu ico
 	menuIndex = 0;
 }
 
-if(point_in_circle(mouse_x, mouse_y, invX, invY, 44)) { //if touching inv icon
+if(point_in_circle(mouse_x, mouse_y, invX, invY, 34)) { //if touching inv icon
 	invIndex = 3;
 	if(leftClick) {
 		if(canOpen) {
