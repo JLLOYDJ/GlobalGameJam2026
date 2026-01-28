@@ -3,6 +3,7 @@ var buttonleft = buttonY - buttonHeight;
 var buttonbottom = buttonX + buttonHeight/sprite_get_height(buttonSprite);
 var buttonright = buttonY + (buttonWidth/sprite_get_height(buttonSprite))*2;
 
+draw_set_colour(c_black);
 
 if (point_in_rectangle(mouse_x, mouse_y, buttonX - buttonWidth/2, buttonY-buttonHeight,
 			buttonX + buttonWidth - 50, 
