@@ -11,7 +11,7 @@ if(up_key || down_key) {
 	//audio_play_sound(snd_menuMove, 1,false);
 }
 if(enter_key) {
-	//audio_play_sound(snd_menuEnter, 1,false);
+	audio_play_sound(snd_buttonClick, 1,false);
 }
 
 //switching between menus

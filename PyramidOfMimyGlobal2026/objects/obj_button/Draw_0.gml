@@ -11,6 +11,7 @@ if (point_in_rectangle(mouse_x, mouse_y, buttonX - buttonWidth/2, buttonY-button
 		draw_sprite_ext(buttonSprite, 1, buttonX - buttonWidth/2, buttonY-buttonHeight, buttonWidth/sprite_get_width(buttonSprite),
 				buttonHeight/sprite_get_height(buttonSprite), 0, c_white, 1);
 		if (mouse_check_button_pressed(mb_left) && !instance_exists(obj_cursorObject)) {
+			audio_play_sound(snd_buttonClick, 1, false);
 			heldObject = instance_create_depth(mouse_x, mouse_y, depth - 1, obj_cursorObject);
 			heldObject.objectName = ds_grid_get(global.playerInv, 0, global.itemSelected);
 			heldObject.objectDesc = ds_grid_get(global.playerInv, 1, global.itemSelected);

@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_buttonClick",
+  "soundFile":"snd_buttonClick.mp3",
   "type":0,
   "volume":1.0,
 }
