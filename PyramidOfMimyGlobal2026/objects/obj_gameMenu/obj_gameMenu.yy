@@ -1,7 +1,11 @@
 {
   "$GMObject":"",
   "%Name":"obj_gameMenu",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_gameMenu",
   "overriddenProperties":[],
@@ -10,8 +14,8 @@
     "path":"folders/1 Objects/UI.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_UI",
-    "path":"objects/obj_par_UI/obj_par_UI.yy",
+    "name":"obj_startMenu",
+    "path":"objects/obj_startMenu/obj_startMenu.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -30,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_menu2",
+    "path":"sprites/spr_menu2/spr_menu2.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
