@@ -3,11 +3,6 @@ E = keyboard_check_pressed(ord("E"))
 
 depth =- y
 
-if(!instance_exists(obj_textbox)) {
-	image_speed = 0;
-	image_index = 0;
-}
-
 /*for(var i = 0; i < ds_grid_height(global.playerInv); i++) {
 	if(ds_grid_get(global.playerInv, 0, i) == questItem &&
 		ds_grid_get(global.playerInv, 1, i) >= questAmount
@@ -50,7 +45,7 @@ if(!instance_exists(obj_textbox)) {
 			}*/
 				NPCid = id;
 				scr_create_textbox(text_id);
-				
-				image_speed = 1;
+				image_speed = 0;
 		}
 }
+
