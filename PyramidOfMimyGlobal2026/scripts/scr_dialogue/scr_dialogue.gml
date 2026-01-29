@@ -69,7 +69,7 @@ function scr_game_text(_text_id) {
 			break;
 	#endregion
 	
-	#region intro/outro & menu stuff
+	#region intro/outro & ui stuff
 	
 	case "intro":
 		scr_text("Forests burn, homes erased, future expansion confirmed.", "narr");
@@ -117,6 +117,13 @@ function scr_game_text(_text_id) {
 		instance_create_depth(x,y,-999999, obj_startMenu);
 		break;
 		
+	case "poison soup":
+		scr_text("You added poison to the soup", "narr");
+		break;
+		
+	case "poison wine":
+		scr_text("You added poison to the wine", "narr");
+		break;
 	
 	#endregion
 	

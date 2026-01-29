@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_potBarrel",
+  "%Name":"obj_barrel",
   "eventList":[],
   "managed":true,
-  "name":"obj_potBarrel",
+  "name":"obj_barrel",
   "overriddenProperties":[],
   "parent":{
     "name":"1 Objects",
