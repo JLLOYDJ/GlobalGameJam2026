@@ -45,9 +45,14 @@ function scr_game_text(_text_id) {
 		scr_text("For this year in particular, they are staging this on the very remains of your homeland.");
 		scr_text("I think you are overdue for an invitation, so why not walk on in?");
 		scr_text("It’s time for revolution, and unmask the monster within.");
+		scr_game_text("start");
+		break;
+	
+	case "start":
+		room_goto(Room1);
 		break;
 		
-	case "ending":
+	case "outro":
 		scr_text("Everyone’s masks slip, their status, their terror.");
 		scr_text("The monsters have been revealed, but their actions still ripple throughout the forest.");
 		scr_text("As one by one fall, what shall you do next?");

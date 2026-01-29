@@ -26,7 +26,7 @@ if(room == rm_start) {
 			switch(pos) {
 				case 0:
 				//start game
-				room_goto(startRoom);
+				scr_create_textbox("intro");
 				instance_destroy();
 				break;
 				case 1:
