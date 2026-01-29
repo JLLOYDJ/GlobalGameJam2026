@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cookingPot",
-    "path":"sprites/spr_cookingPot/spr_cookingPot.yy",
+    "name":"spr_barrel",
+    "path":"sprites/spr_barrel/spr_barrel.yy",
   },
   "spriteMaskId":null,
   "visible":true,
