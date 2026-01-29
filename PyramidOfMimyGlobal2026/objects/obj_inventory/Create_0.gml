@@ -18,7 +18,7 @@ openInv = keyboard_check_pressed(ord("i"));
 closeInv = keyboard_check_pressed(vk_escape);
 canOpen = !instance_exists(obj_invGUI) && !instance_exists(obj_par_UI)
 
-addItem(global.playerInv, "Stupid sword", "sword of get absolutely fucked up", spr_option_selector, "");
+//addItem(global.playerInv, "Stupid sword", "sword of get absolutely fucked up", spr_option_selector, "");
 /*addItem(global.playerInv, "Magic Orb", 1, "It glows", spr_player, "", "armour", 14, false);
 addItem(global.playerInv, "Circle", 1, "It is a circle", spr_redSquare, "", "object", 2, false);
 addItem(global.playerInv, "Red ball", 1, "It's a red ball", spr_redSquare, "", "weapon", 9, false);

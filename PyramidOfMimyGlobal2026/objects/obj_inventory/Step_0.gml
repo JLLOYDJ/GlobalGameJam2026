@@ -6,8 +6,9 @@ global.inv_y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_c
 
 //create the inventory on screen
 if(keyboard_check_pressed(ord("I"))) {
+	audio_play_sound(snd_buttonClick, 1, false);
 	if(!instance_exists(obj_invGUI) && !instance_exists(obj_par_UI)) { //only open if not already open
-	instance_create_depth(global.inv_x, global.inv_y, -9999, obj_invGUI);
+		instance_create_depth(global.inv_x, global.inv_y, -9999, obj_invGUI);
 
 	} else {
 		//get rid of invenotry
@@ -21,6 +22,7 @@ if(keyboard_check_pressed(ord("I"))) {
 if(keyboard_check_pressed(vk_escape) && instance_exists(obj_invGUI)) {
 	//get rid of invenotry
 	instance_destroy(obj_invGUI);
+	audio_play_sound(snd_buttonClick, 1, false);
 	repeat(2) {
 		instance_destroy(obj_button);
 	}

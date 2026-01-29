@@ -2,9 +2,10 @@
 event_inherited();
 
 options[0,0] = "Resume";
-options[0,1] = "Help";
+options[0,1] = "Restart";
 options[0,2] = "Volume";
-options[0,3] = "Exit"
+options[0,3] = "Fullscreen: OFF";
+options[0,4] = "Exit"
 
 options[1,0] = "Volume";
 options[1,1] = "Window Size";
@@ -28,3 +29,6 @@ options[4,0] = "Controls";
 options[4,1] = "Restart";
 options[4,2] = "Back"
 
+if(window_get_fullscreen() = true) {
+	options[0,3] = "Fullscreen: ON";
+}
