@@ -43,24 +43,42 @@ if(room == rm_start) {
 				break;
 			}
 			break;
-		
-			case 1: //settings
-			switch(pos)
-			{
-				case 0:
-				//volume
-				menu_level = 3;
+			
+			case 1: //volume
+				switch(pos) {
+					case 0:
+					break;
+					case 1:
+					//100
+					audio_master_gain(1);
+					options[3,0] = "Volume: MAX";
+					break;
+					case 2:
+					//75
+					audio_master_gain(0.75);
+					options[3,0] = "Volume: 75%";
+					break;
+					case 3:
+					//50
+					audio_master_gain(0.5);
+					options[3,0] = "Volume: 50%";
+					break;
+					case 4:
+					//25
+					audio_master_gain(0.25);
+					options[3,0] = "Volume: 25%";
+					break;
+					case 5:
+					//off
+					audio_master_gain(0);
+					options[3,0] = "Volume: OFF";
+					break;
+					case 6:
+					//back
+					menu_level = 0;
+					break;
+				}
 				break;
-				case 1:
-				//resolution
-				menu_level = 2;
-				break;
-				case 2:
-				//back
-				menu_level = 0;
-				break;
-			}
-			break;
 		
 			case 2: //window size - UNUSED FOR NOW
 			switch(pos)
@@ -88,6 +106,8 @@ if(room == rm_start) {
 		
 			case 3: //volume
 			switch(pos) {
+				case 0:
+				break;
 				case 1:
 				//100
 				audio_master_gain(1);
@@ -118,6 +138,7 @@ if(room == rm_start) {
 				menu_level = 0;
 				break;
 			}
+			break;
 		
 		}
 		if(_sml != menu_level) {

@@ -19,12 +19,15 @@ esc = keyboard_check_pressed(vk_escape);
 if (esc) {
 	if(canOpen) {
 		instance_create_depth(x,y,-9999, obj_gameMenu);
+		audio_play_sound(snd_buttonClick, 1, false);
 	} else {
 		if(menuOpen) {
 			instance_destroy(obj_gameMenu);
+			audio_play_sound(snd_buttonClick, 1, false);
 		}
 		if(invOpen) {
 			instance_destroy(obj_invGUI);
+			audio_play_sound(snd_buttonClick, 1, false);
 			repeat(2) {
 				instance_destroy(obj_button);
 			}
@@ -36,6 +39,7 @@ if (esc) {
 if(point_in_circle(mouse_x, mouse_y, menuX, menuY, 34)) { //if souching menu icon
 	menuIndex = 1;
 	if(leftClick) {
+		audio_play_sound(snd_buttonClick, 1, false);
 		if(canOpen) {
 			instance_create_depth(x,y,-9999, obj_gameMenu);
 		} else {
@@ -49,6 +53,7 @@ if(point_in_circle(mouse_x, mouse_y, menuX, menuY, 34)) { //if souching menu ico
 if(point_in_circle(mouse_x, mouse_y, invX, invY, 34)) { //if touching inv icon
 	invIndex = 3;
 	if(leftClick) {
+		audio_play_sound(snd_buttonClick, 1, false);
 		if(canOpen) {
 			instance_create_depth(global.inv_x,global.inv_y,-9999, obj_invGUI);
 		} else {
