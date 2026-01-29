@@ -12,8 +12,8 @@
   "duration":0.0,
   "name":"snd_staff2",
   "parent":{
-    "name":"voices",
-    "path":"folders/5 Sounds/voices.yy",
+    "name":"5 Sounds",
+    "path":"folders/5 Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

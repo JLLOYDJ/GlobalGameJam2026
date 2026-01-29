@@ -45,7 +45,7 @@ function scr_options(_option, _link_id) {
 
 function scr_game_text(_text_id) {
 	//room to go to when hitting start
-	var startingRoom = rm_testing;
+	var startingRoom = rm_ballroom;
 	
 	//most game text passed in here
 	switch(_text_id) {
