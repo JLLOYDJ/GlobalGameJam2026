@@ -41,17 +41,29 @@ if(room != rm_start && !instance_exists(obj_textbox)) {
 				//scr_create_textbox("menu - controls");
 				break;
 				case 1:
-				//Help
-				//list of options that create textboxes
-				menu_level = 4;
+				//restart
+				game_restart()
 				break;
 				case 2:
 				//volume
 				menu_level = 3;
 				break;
 				case 3:
-				//exit
-				game_restart();
+				//fullscreen toggle
+				if(window_get_fullscreen() = true) {
+					global.window_w = 1280;
+					global.window_h = 720;
+					window_set_fullscreen(false);
+					window_set_size(1280, 720);
+					window_center();
+					options[0,3] = "Fullscreen: OFF";
+				} else {
+					window_set_fullscreen(true);
+					options[0,3] = "Fullscreen: ON";
+				}
+				break;
+				case 4:
+				exit;
 				break;
 			}
 			break;
@@ -153,7 +165,7 @@ if(room != rm_start && !instance_exists(obj_textbox)) {
 				break;
 				
 				case 1: //restart
-				//scr_create_textbox("help - ac");
+				game_restart();
 				break
 				
 				case 2: //back

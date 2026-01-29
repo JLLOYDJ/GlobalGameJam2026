@@ -1,7 +1,8 @@
 //accepting input
-enter_key = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("E"));
-up_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
-down_key = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
+enter_key = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("E")) 
+			|| mouse_check_button_pressed(mb_left);
+up_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")) || mouse_wheel_up();
+down_key = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) || mouse_wheel_down();
 
 
 textbox_x =  global.cam_x + window_get_width/2 + textbox_width/4; //used to have global.camX & global.camY

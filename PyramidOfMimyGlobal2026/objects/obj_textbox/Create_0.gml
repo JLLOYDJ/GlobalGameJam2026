@@ -34,3 +34,7 @@ setup = false;
 enter_key = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("E"));
 up_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 down_key = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
+
+//the type of sound that dialogue makes
+voiceSnd1 = snd_narration1;
+voiceSnd2 = snd_narration2;
