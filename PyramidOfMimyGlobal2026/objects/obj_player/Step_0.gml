@@ -1,9 +1,11 @@
 #region movement
 
+depth =- y;
+
 //if UI open, cant move and cant choose a new place to move
 if (!instance_exists(obj_par_UI)){
 	//check if object is in a circle, if yes, stop moving
-	if((!point_in_circle(x, y, targetX, targetY, 16)) || (!instance_position(targetX, targetY, obj_invisiblewall))) { // halved the circle size because i centred the player origin -riley
+	if((!point_in_circle(x, y, targetX, targetY, 16)) && (!instance_position(targetX, targetY, obj_invisiblewall))) { // halved the circle size because i centred the player origin -riley
 		move_towards_point(targetX, targetY, 5);
 	} else {
 		speed = 0;
