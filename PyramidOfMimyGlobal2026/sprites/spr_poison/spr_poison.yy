@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a9658853-48ee-4925-aa52-72043aa7e618","name":"a9658853-48ee-4925-aa52-72043aa7e618","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"893db5cc-0a97-412d-b145-3f7db244a0d9","name":"893db5cc-0a97-412d-b145-3f7db244a0d9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7779473b-6073-4b71-ac27-f496b9f6676e","blendMode":0,"displayName":"default","isLocked":false,"name":"7779473b-6073-4b71-ac27-f496b9f6676e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8a76076d-aba8-460f-98bf-f7e62e5926b1","blendMode":0,"displayName":"default","isLocked":false,"name":"8a76076d-aba8-460f-98bf-f7e62e5926b1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_poison",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"2 Sprites",
-    "path":"folders/2 Sprites.yy",
+    "name":"Bedroom",
+    "path":"folders/2 Sprites/Bedroom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -71,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a9658853-48ee-4925-aa52-72043aa7e618","path":"sprites/spr_poison/spr_poison.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9ef10e98-b5a4-49b0-95f9-2b5a4744f459","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"893db5cc-0a97-412d-b145-3f7db244a0d9","path":"sprites/spr_poison/spr_poison.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"25d3b71b-37cf-4d4b-9963-3eaa36e6f798","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

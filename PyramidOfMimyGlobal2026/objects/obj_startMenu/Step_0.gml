@@ -26,8 +26,7 @@ if(room == rm_start) {
 			switch(pos) {
 				case 0:
 				//start game
-				scr_create_textbox("intro");
-				instance_destroy(obj_mimy);
+				room_goto(rm_forest);
 				instance_destroy();
 				break;
 				case 1:

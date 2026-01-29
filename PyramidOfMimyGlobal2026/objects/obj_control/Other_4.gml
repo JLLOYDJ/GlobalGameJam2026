@@ -3,6 +3,7 @@ audio_stop_all();
 if(room == rm_forest)
 {
 	audio_play_sound(bgm_narrative, 100, true);
+	scr_create_textbox("intro");
 }
 else if(room == rm_ballroom)
 {

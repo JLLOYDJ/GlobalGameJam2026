@@ -259,7 +259,7 @@ function scr_game_text(_text_id) {
 			scr_text("Guest: Maybe you should run your own event instead. Who would remember Le Monsieur Don after your event, right?", "f1guest");
 			break;
 		case "guest1Neu":
-			scr_text("You: Does Le Monsieur run events often?", "narr", "f1guest");
+			scr_text("You: Does Le Monsieur run events often?", "narr");
 			scr_text("Guest: Ohohoho! You must be new in Status.", "f1guest");
 			scr_text("Guest: Le Monsieur Don runs all le events around here.", "f1guest");
 			break;

@@ -12,23 +12,23 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a0f4b904-8c3b-46ec-9de9-15e4bfcedaa7","name":"a0f4b904-8c3b-46ec-9de9-15e4bfcedaa7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"2c6121dd-c4df-41ad-abae-a5ab1889dc74","name":"2c6121dd-c4df-41ad-abae-a5ab1889dc74","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"668b3f8f-8ab9-4c0b-9e37-10b72e25b825","name":"668b3f8f-8ab9-4c0b-9e37-10b72e25b825","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6914ffc6-8097-4479-85b4-fee428382166","name":"6914ffc6-8097-4479-85b4-fee428382166","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"5841f8b2-01cb-4ea7-abb8-d686415e0582","name":"5841f8b2-01cb-4ea7-abb8-d686415e0582","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c555b1c9-8425-478a-b293-129ade52555a","name":"c555b1c9-8425-478a-b293-129ade52555a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":72,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"42e9f40e-063c-4553-91a3-17073925ddd7","blendMode":0,"displayName":"default","isLocked":false,"name":"42e9f40e-063c-4553-91a3-17073925ddd7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"bc4046c7-c51c-47e0-bac7-67565494353b","blendMode":0,"displayName":"default","isLocked":false,"name":"bc4046c7-c51c-47e0-bac7-67565494353b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_NPCchef",
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"2 Sprites",
-    "path":"folders/2 Sprites.yy",
+    "name":"Backend",
+    "path":"folders/2 Sprites/Backend.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -73,14 +73,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a0f4b904-8c3b-46ec-9de9-15e4bfcedaa7","path":"sprites/spr_NPCchef/spr_NPCchef.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e9b73276-418f-403e-a04b-87d7cb34981c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6914ffc6-8097-4479-85b4-fee428382166","path":"sprites/spr_NPCchef/spr_NPCchef.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"beb14c6a-e741-4863-b753-d5617e78db0c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c6121dd-c4df-41ad-abae-a5ab1889dc74","path":"sprites/spr_NPCchef/spr_NPCchef.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7e21fad8-a952-426b-9778-963c5670c8f3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5841f8b2-01cb-4ea7-abb8-d686415e0582","path":"sprites/spr_NPCchef/spr_NPCchef.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7b80d39c-6649-4558-8fb1-0f8adf5ecaaa","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"668b3f8f-8ab9-4c0b-9e37-10b72e25b825","path":"sprites/spr_NPCchef/spr_NPCchef.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a41ad695-7ee7-43fb-b062-98397ba46a47","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c555b1c9-8425-478a-b293-129ade52555a","path":"sprites/spr_NPCchef/spr_NPCchef.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"868f4af4-f1e0-4873-86bf-6cf5c3eaad08","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

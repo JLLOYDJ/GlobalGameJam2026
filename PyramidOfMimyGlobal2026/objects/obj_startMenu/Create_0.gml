@@ -5,7 +5,6 @@ op_space = 30;
 pos = 0;
 global.window_size = 800;
 menuSprite = spr_menu2;
-startRoom = rm_ballroom;
 optionSections = 0
 
 
