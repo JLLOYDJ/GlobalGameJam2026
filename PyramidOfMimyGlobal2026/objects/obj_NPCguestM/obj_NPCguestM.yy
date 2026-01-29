@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_NPCguestM",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_NPCguestM",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"1 Objects",
     "path":"folders/1 Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_NPCparent",
+    "path":"objects/obj_NPCparent/obj_NPCparent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

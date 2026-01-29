@@ -67,7 +67,7 @@ function scr_game_text(_text_id) {
 			break;
 	#endregion
 	
-	#region beginning and ending
+	#region intro/outro & menu stuff
 	
 	case "intro":
 		scr_text("Forests burn, homes erased, future expansion confirmed.", "narr");
@@ -119,6 +119,10 @@ function scr_game_text(_text_id) {
 	#endregion
 	
 	#region dialogue
+	
+		case "spoken to":
+			scr_text("They seem to be ignoring you now.", "narr");
+		break;
 	
 		#region staff (after bedroom)
 		
