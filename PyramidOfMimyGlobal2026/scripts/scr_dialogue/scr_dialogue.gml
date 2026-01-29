@@ -102,6 +102,19 @@ function scr_game_text(_text_id) {
 	case "restart":
 		game_restart()
 		break;
+		
+	case "credits":
+		scr_text("--The Masks We Wear by Pyramid of Mimy--\nProducer: Jonathon Lloyd-Jones\nArtist: Lloyd Purser\nDesign: Matthew Revell\nProgramming: George Carter & Riley Cull", "narr");
+		scr_text("--Asset Creation--\nLloyd: Initial cutscene & environments\nMatt: Characters & Le Don\nJon: Items, UI, & dialogue sounds\nGeorge: Pyramid of Mimy logo", "narr");
+		scr_text("--External Assets Used--\nSFX - ZapSplat\nComing For You - ZapSplat\nDark Tense Sinister Drone - ZapSplat\nUnder the Stairs - Deep Theme Audio\nWedding Dance - Angela Paulson\nHorizons - SyncMusic Tracks", "narr");
+		scr_text("--Software Used--\nGameMaker Studio 2\nPyxel Edit\nFL Studio\nAudacity\nGithub\nJira", "narr");
+		scr_options("Back", "back");
+		break;
+		
+	case "back":
+		instance_create_depth(x,y,-999999, obj_startMenu);
+		break;
+		
 	
 	#endregion
 	
