@@ -27,6 +27,7 @@ if(room == rm_start) {
 				case 0:
 				//start game
 				scr_create_textbox("intro");
+				instance_destroy(obj_mimy);
 				instance_destroy();
 				break;
 				case 1:
@@ -34,10 +35,25 @@ if(room == rm_start) {
 				menu_level = 1
 				break;
 				case 2:
-				//credits
-				scr_create_textbox("credits");
+				//fullscreen toggle
+				if(window_get_fullscreen() = true) {
+					global.window_w = 1280;
+					global.window_h = 720;
+					window_set_fullscreen(false);
+					window_set_size(1280, 720);
+					window_center();
+					options[0,2] = "Fullscreen: OFF";
+				} else {
+					window_set_fullscreen(true);
+					options[0,2] = "Fullscreen: ON";
+				}
 				break;
 				case 3:
+				//credits
+				scr_create_textbox("credits");
+				instance_destroy();
+				break;
+				case 4:
 				//exit
 				exit;
 				break;

@@ -12,8 +12,9 @@ optionSections = 0
 #region start menu 
 options[0,0] = "Start Game";
 options[0,1] = "Volume";
-options[0,2] = "Credits";
-options[0,3] = "Exit";
+options[0,2] = "Fullscreen: OFF";
+options[0,3] = "Credits";
+options[0,4] = "Exit";
 
 //options[1,0] = "Volume";
 //options[1,1] = "Window Size";
