@@ -10,6 +10,8 @@ page_number = 0;
 text_x_offset[0] = 48;
 depth = -9999;
 type = 0;
+textbox_x =  global.cam_x + window_get_width/2 + textbox_width/4; //used to have global.camX & global.camY
+textbox_y =  global.cam_y + window_get_height/2 + textbox_height;
 
 //text array
 text[0] = "";
