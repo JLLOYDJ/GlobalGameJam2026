@@ -51,7 +51,7 @@ if(room != rm_start && !instance_exists(obj_textbox)) {
 				break;
 				case 3:
 				//exit
-				game_restart();
+				exit;
 				break;
 			}
 			break;
@@ -153,7 +153,7 @@ if(room != rm_start && !instance_exists(obj_textbox)) {
 				break;
 				
 				case 1: //restart
-				//scr_create_textbox("help - ac");
+				game_restart();
 				break
 				
 				case 2: //back

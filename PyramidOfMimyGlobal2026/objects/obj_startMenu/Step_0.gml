@@ -39,7 +39,7 @@ if(room == rm_start) {
 				break;
 				case 3:
 				//exit
-				game_restart();
+				exit;
 				break;
 			}
 			break;
