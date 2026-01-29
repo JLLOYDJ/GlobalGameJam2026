@@ -45,7 +45,7 @@ function scr_game_text(_text_id) {
 		scr_text("For this year in particular, they are staging this on the very remains of your homeland.");
 		scr_text("I think you are overdue for an invitation, so why not walk on in?");
 		scr_text("It’s time for revolution, and unmask the monster within.");
-		scr_game_text("start");
+		scr_options("Begin", "start");
 		break;
 	
 	case "start":
@@ -256,7 +256,7 @@ function scr_game_text(_text_id) {
 	}
 }
 			
-function scr_create_textbox(_text_id){
+function scr_create_textbox(_text_id, _snd_type){
 		with(instance_create_depth(0,0,-999999, obj_textbox)){
 			//text to be drawn
 			/*scr_text("TESTING TESTING");
