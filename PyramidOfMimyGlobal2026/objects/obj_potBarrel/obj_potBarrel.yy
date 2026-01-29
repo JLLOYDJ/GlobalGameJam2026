@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_NPCparent",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_potBarrel",
+  "eventList":[],
   "managed":true,
-  "name":"obj_NPCparent",
+  "name":"obj_potBarrel",
   "overriddenProperties":[],
   "parent":{
     "name":"1 Objects",
@@ -29,8 +26,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":null,
+  "solid":false,
+  "spriteId":{
+    "name":"spr_cookingPot",
+    "path":"sprites/spr_cookingPot/spr_cookingPot.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

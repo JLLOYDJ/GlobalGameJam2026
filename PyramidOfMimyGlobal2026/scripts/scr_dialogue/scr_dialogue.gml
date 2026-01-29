@@ -44,6 +44,8 @@ function scr_options(_option, _link_id) {
 }
 
 function scr_game_text(_text_id) {
+	//room to go to when hitting start
+	var startingRoom = rm_testing;
 	
 	//most game text passed in here
 	switch(_text_id) {
@@ -81,7 +83,7 @@ function scr_game_text(_text_id) {
 		break;
 	
 	case "start":
-		room_goto(Room1);
+		room_goto(startingRoom);
 		break;
 		
 	case "outro":
@@ -266,7 +268,7 @@ function scr_game_text(_text_id) {
 			break;
 		case "guest2Neu":
 			scr_text("You: Le food needs a good drink to go with it.", "narr");
-			scr_text("Guest: Le Wine is always good with some food, though we are running low.", "f2guest");
+			scr_text("Guest: Le wine is always good with some food, though we are running low.", "f2guest");
 			break;
 		case "guest2Pos":
 			scr_text("You: Le Chef hits le perfect flavour, it’s something else.", "narr");
@@ -291,8 +293,8 @@ function scr_game_text(_text_id) {
 			break;
 		case "guest3Pos":
 			scr_text("You: Le Monsieur must have le biggest room.", "narr");
-			scr_text("Guest: His room of Le 47, is le room to beat all other rooms.", "mguest");
-			scr_text("Guest: Moi dreams to get that room une day... Maybe une day...", "mguest");
+			scr_text("Guest: His room is le room to beat all other rooms.", "mguest");
+			scr_text("Guest: Some say le key to a man's room is through his oranges.", "mguest");
 			break;
 		case "guest3Neg":
 			scr_text("You: Le Monsieur Don must be more focused on the wonderful events than the beds.", "narr");
