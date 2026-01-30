@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":0.21034014,
   "name":"snd_chef2",
   "parent":{
     "name":"5 Sounds",

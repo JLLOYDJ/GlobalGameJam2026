@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":0.20192744,
   "name":"snd_Mguest2",
   "parent":{
     "name":"5 Sounds",

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":0.16995464,
   "name":"snd_staff2",
   "parent":{
     "name":"5 Sounds",

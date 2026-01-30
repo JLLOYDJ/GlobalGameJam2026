@@ -68,6 +68,7 @@
     {"id":{"name":"obj_NPCguestM","path":"objects/obj_NPCguestM/obj_NPCguestM.yy",},},
     {"id":{"name":"obj_NPCparent","path":"objects/obj_NPCparent/obj_NPCparent.yy",},},
     {"id":{"name":"obj_NPCstaff","path":"objects/obj_NPCstaff/obj_NPCstaff.yy",},},
+    {"id":{"name":"obj_oranges","path":"objects/obj_oranges/obj_oranges.yy",},},
     {"id":{"name":"obj_par_UI","path":"objects/obj_par_UI/obj_par_UI.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_pot","path":"objects/obj_pot/obj_pot.yy",},},
