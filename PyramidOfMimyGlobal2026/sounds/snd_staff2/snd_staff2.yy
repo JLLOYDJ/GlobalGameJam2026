@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_staff2",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.16995464,
+  "name":"snd_staff2",
+  "parent":{
+    "name":"5 Sounds",
+    "path":"folders/5 Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_staff2.wav",
+  "type":0,
+  "volume":1.0,
+}

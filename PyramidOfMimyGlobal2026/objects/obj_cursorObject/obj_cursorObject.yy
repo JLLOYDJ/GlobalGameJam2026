@@ -13,7 +13,10 @@
     "name":"1 Objects",
     "path":"folders/1 Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_par_UI",
+    "path":"objects/obj_par_UI/obj_par_UI.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

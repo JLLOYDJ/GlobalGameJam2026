@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"seq_intro_Events4",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"seq_intro_Events4",
+  "parent":{
+    "name":"PyramidOfMimyGlobal2026",
+    "path":"PyramidOfMimyGlobal2026.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
