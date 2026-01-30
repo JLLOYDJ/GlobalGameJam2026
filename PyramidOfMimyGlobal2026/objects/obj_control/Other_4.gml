@@ -1,5 +1,9 @@
 audio_stop_all();
 
+//if(room != rm_start) {
+	//layer_sequence_create("Sequences", 640, 360, seq_roomchangestart);
+//}
+
 if(room == rm_start)
 {
 	beginning = true;
@@ -38,3 +42,7 @@ else if((room == rm_kitchen) || (room == rm_winecellar) || (room == rm_start))
 {
 	audio_play_sound(bgm_kitchen, 1, true);
 }
+
+/*if(room != rm_start && room != rm_forest) {
+	layer_sequence_create("Sequences", global.cam_x+(global.cam_w/2), global.cam_y+(global.cam_h/2), seq_roomchangeend);
+}*/

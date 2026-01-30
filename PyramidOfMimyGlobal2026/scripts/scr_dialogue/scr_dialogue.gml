@@ -180,6 +180,8 @@ function scr_game_text(_text_id) {
 	case "go to room":
 		if(global.hasKey = true) {
 			room_goto(rm_bedroom);
+			//layer_sequence_create("Sequences", global.cam_x+(global.cam_w/2), global.cam_y+(global.cam_h/2), seq_roomchangestart);
+			//change.room_change(rm_bedroom);
 		} else {
 			scr_text("The door is locked. You will need a key to enter here...", "narr");
 		}
@@ -187,14 +189,17 @@ function scr_game_text(_text_id) {
 		
 	case "go to kitchen":
 		room_goto(rm_kitchen);
+		//layer_sequence_create("Sequences", global.cam_x+(global.cam_w/2), global.cam_y+(global.cam_h/2), seq_roomchangestart);
 		break;
 		
 	case "go to ballroom":
 		room_goto(rm_ballroom);
+		//layer_sequence_create("Sequences", global.cam_x+(global.cam_w/2), global.cam_y+(global.cam_h/2), seq_roomchangestart);
 		break;
 		
 	case "go to wine cellar":
 		room_goto(rm_winecellar);
+		//layer_sequence_create("Sequences", global.cam_x+(global.cam_w/2), global.cam_y+(global.cam_h/2), seq_roomchangestart);
 		break;
 	
 	#endregion

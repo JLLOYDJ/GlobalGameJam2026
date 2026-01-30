@@ -6,10 +6,7 @@ window_center();
 //setting default camera
 view_camera[0] = view_camera[0];
 
-if(room != rm_start) {
-	start = true;
-	layer_sequence_create("Sequences", 640, 360, seq_roomchangestart);
-}
+global.roomChange = rm_kitchen;
 
 beginning = true;
 ending = false;

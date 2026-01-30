@@ -1,7 +1,9 @@
+event_inherited();
+
 left_click = mouse_check_button_pressed(mb_left)
 E = keyboard_check_pressed(ord("E"))
 
-depth =- y
+
 
 if(obj_player.x > x) {
 	image_xscale = -1;
