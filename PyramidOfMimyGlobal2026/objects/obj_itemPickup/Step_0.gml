@@ -7,7 +7,9 @@ if (point_in_rectangle(obj_player.x, obj_player.y, bbox_left-400,bbox_top-400,bb
 	 if((E || position_meeting(mouse_x, mouse_y,self)) && left_click) {
 			
 			addItem(global.playerInv, objname, objdesc, objsprite, "");
-				
+			if(objname = "Key") {
+				global.hasKey = true;
+			}
 			//image_speed = 1;
 
 			 instance_destroy();

@@ -130,6 +130,60 @@ function scr_game_text(_text_id) {
 		scr_text("You can't use that here", "narr");
 		scr_text("To put the object back into your inventory, right click or press Q", "narr");
 		break;
+		
+	case "poison pickup":
+		scr_text("Some poison fell out of the wardrobe", "narr");
+		break;
+		
+	case "key pickup":
+		scr_text("A key came out of the oranges", "narr");
+		break;
+		
+	case "from ballroom":
+		scr_text("Where would you like to go?", "narr");
+		scr_options("Le Don's room", "go to room");
+		scr_options("Kitchen", "go to kitchen");
+		break;
+		
+	case "from bedroom":
+		scr_text("Where would you like to go?", "narr");
+		scr_options("Ballroom", "go to ballroom");
+		scr_options("Kitchen", "go to kitchen");
+		break;
+		
+	case "from kitchen":
+		scr_text("Where would you like to go?", "narr");
+		scr_options("Wine cellar", "go to wine cellar");
+		scr_options("Ballroom", "go to ballroom");
+		scr_options("Le Don's room", "go to room");
+		break;
+		
+	case "from winecellar":
+		scr_text("Where would you like to go?", "narr");
+		scr_options("Kitchen", "go to kitchen");
+		scr_options("Ballroom", "go to ballroom");
+		scr_options("Le Don's room", "go to room");
+		break;
+		
+	case "go to room":
+		if(global.hasKey = true) {
+			room_goto(rm_bedroom);
+		} else {
+			scr_text("The door is locked. You will need a key to enter here...", "narr");
+		}
+		break;
+		
+	case "go to kitchen":
+		room_goto(rm_kitchen);
+		break;
+		
+	case "go to ballroom":
+		room_goto(rm_ballroom);
+		break;
+		
+	case "go to wine cellar":
+		room_goto(rm_winecellar);
+		break;
 	
 	#endregion
 	

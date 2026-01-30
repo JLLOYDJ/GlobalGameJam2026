@@ -10,10 +10,10 @@ if (point_in_rectangle(obj_player.x, obj_player.y, bbox_left-400,bbox_top-400,bb
 			hasProducedKey = true;
 			audio_play_sound(snd_buttonClick, 1, false);
 			key = instance_create_depth(x-16, y-96, depth-1, obj_itemPickup);
-			key.objname = "Key";
-			key.objdesc = "The key to Le Monsieur Don's room.";
-			key.objsprite = spr_key;
-			scr_create_textbox("key pickup");
+			//key.objname = "Key";
+			//key.objdesc = "The key to Le Monsieur Don's room.";
+			//key.objsprite = spr_key;
+			scr_create_textbox("poison pickup");
 		 }
 			
 	 }
