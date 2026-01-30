@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Wine Cellar",
-    "path":"folders/2 Sprites/Wine Cellar.yy",
+    "name":"2 Sprites",
+    "path":"folders/2 Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
