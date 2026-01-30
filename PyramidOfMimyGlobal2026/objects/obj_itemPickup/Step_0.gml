@@ -9,6 +9,8 @@ if (point_in_rectangle(obj_player.x, obj_player.y, bbox_left-400,bbox_top-400,bb
 			addItem(global.playerInv, objname, objdesc, objsprite, "");
 			if(objname = "Key") {
 				global.hasKey = true;
+			} else if(objname = "Poison") {
+				instance_create_depth(obj_player.x+2000, obj_player.y, obj_player.depth, obj_NPCstaff);
 			}
 			//image_speed = 1;
 

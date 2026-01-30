@@ -119,11 +119,12 @@ function scr_game_text(_text_id) {
 		
 	case "poison soup":
 		scr_text("You added poison to the soup", "narr");
-		instance_create_depth(obj_player.x+200, obj_player.y, -y, obj_NPCchef);
+		instance_create_depth(obj_player.x+2000, obj_player.y, obj_player.depth, obj_NPCchef);
 		break;
 		
 	case "poison wine":
 		scr_text("You added poison to the wine", "narr");
+		instance_create_depth(obj_player.x+2000, obj_player.y, obj_player.depth, obj_NPCchef);
 		break;
 		
 	case "can't use":

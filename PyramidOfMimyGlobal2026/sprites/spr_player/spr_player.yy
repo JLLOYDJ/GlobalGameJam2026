@@ -30,7 +30,7 @@
   ],
   "name":"spr_player",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Backend",
     "path":"folders/2 Sprites/Backend.yy",
@@ -106,7 +106,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":48,
-    "yorigin":96,
+    "yorigin":192,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
