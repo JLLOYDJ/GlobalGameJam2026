@@ -10,3 +10,7 @@ if(room != rm_start) {
 	start = true;
 	layer_sequence_create("Sequences", 640, 360, seq_roomchangestart);
 }
+
+beginning = true;
+ending = false;
+global.winOrLose = true;

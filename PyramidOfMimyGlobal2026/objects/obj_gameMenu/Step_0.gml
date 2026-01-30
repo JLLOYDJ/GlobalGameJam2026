@@ -63,7 +63,7 @@ if(room != rm_start && !instance_exists(obj_textbox)) {
 				}
 				break;
 				case 4:
-				exit;
+				game_end();
 				break;
 			}
 			break;

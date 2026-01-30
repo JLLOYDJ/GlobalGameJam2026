@@ -54,7 +54,7 @@ if(room == rm_start) {
 				break;
 				case 4:
 				//exit
-				exit;
+				game_end();
 				break;
 			}
 			break;

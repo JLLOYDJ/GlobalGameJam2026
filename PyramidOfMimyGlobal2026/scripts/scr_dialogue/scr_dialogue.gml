@@ -97,8 +97,19 @@ function scr_game_text(_text_id) {
 			scr_options("Try again", "restart");
 		break;
 		
+	case "outro lose":
+		scr_text("You were caught by the monsters at the masquerade.", "narr");
+		scr_text("You failed to bring them down. What will you do next?", "narr");
+			scr_options("Quit", "quit");
+			scr_options("Try again", "restart");
+		break;
+		
+	case "end":
+		room_goto(rm_forest);
+		break;
+		
 	case "quit":
-		exit;
+		game_end();
 		break;
 		
 	case "restart":
@@ -205,6 +216,7 @@ function scr_game_text(_text_id) {
 			break;
 				
 		case "staffPos":
+			obj_NPCstaff.image_index = 1;
 			scr_text("You: Apologies! I must have gotten the wrong room.", "narr");
 			scr_text("You: Wouldn't want to upset the Don.", "narr");
 			scr_text("Staff: I see...", "staff");
@@ -218,10 +230,13 @@ function scr_game_text(_text_id) {
 			break;
 		
 		case "staffNeg":
+			obj_NPCstaff.image_index = 2;
 			scr_text("You: I’ve never heard of this Monsieur Don.", "narr");
 			scr_text("Staff: Considering his status...", "staff");
 			scr_text("Staff: You should know EVERYTHING about him.", "staff");
 			scr_text("YOU HAVE BEEN CAUGHT", "narr");
+			global.winOrLose = false;
+			scr_options("Next", "end");
 			//GAME OVER
 			break;
 		
@@ -238,18 +253,24 @@ function scr_game_text(_text_id) {
 			break;
 		
 		case "soupPos":
+			obj_NPCchef.image_index = 1;
 			scr_text("You: You forgot the most important ingredient.", "narr");
 			scr_text("You: Le Don likes his spices, there is no punch in this soup!", "narr");
 			scr_text("Chef: Ce n’est pas bon!!!!", "chef");
 			scr_text("Chef: Merci friend, go and enjoy the ball room. Le soup will be out soon!", "chef");
+			global.winOrLose = true;
+			scr_options("Next", "end");
 			//go to ballroom and trigger ending
 			break;
 		case "soupNeg":
+			obj_NPCchef.image_index = 2;
 			scr_text("You: I added some sweetness to the soup! Le Don likes sweetness in his soup.", "narr");
 			scr_text("Chef: Non, non, NON!!!!", "chef");
 			scr_text("Chef: Le Don doesn't like sweetness....", "chef");
 			scr_text("Chef: You should know better.", "chef");
 			scr_text("YOU HAVE BEEN CAUGHT", "narr");
+			global.winOrLose = false;
+			scr_options("Next", "end");
 			//game over
 			break;
 		case "soupNeu":
@@ -272,10 +293,13 @@ function scr_game_text(_text_id) {
 			break;
 		
 		case "wineNeg":
+			obj_NPCchef.image_index = 2;
 			scr_text("You: Le Ale, that’s what this party needs.", "narr");
 			scr_text("Chef: Le Ale???? Le Party?????? Non, non, NON!!!!!!", "chef");
 			scr_text("Chef: This is an event for le people of high standing! Not folk like YOU.", "chef");
 			scr_text("(YOU HAVE BEEN CAUGHT)", "narr");
+			global.winOrLose = false;
+			scr_options("Next", "end");
 			//game over
 			break;
 		case "wineNeu":
@@ -285,9 +309,12 @@ function scr_game_text(_text_id) {
 			//ballroom trigger ending unless something else
 			break;
 		case "winePos":
+			obj_NPCchef.image_index = 1;
 			scr_text("You: Le Wine is about to run out, Le Don wouldn’t be happy without his wine.", "narr");
 			scr_text("Chef: Oui!!!! Of course!!!!!!!", "chef");
 			scr_text("Chef: Le Guests must have been enjoying a bit too much. I’ll bring this barrel up soon! Go enjoy le food in la ballroom!", "chef");
+			global.winOrLose = true;
+			scr_options("Next", "end");
 			//ballroom trigger ending
 			break;
 		

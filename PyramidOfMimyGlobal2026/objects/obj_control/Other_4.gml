@@ -1,10 +1,28 @@
 audio_stop_all();
 
+if(room == rm_start)
+{
+	beginning = true;
+}
+
 if(room == rm_forest)
 {
 	audio_play_sound(bgm_narrative, 1, true);
-	scr_create_textbox("intro");
 	audio_sound_gain(bgm_narrative, 1, 2);
+	if(beginning = true) {
+		beginning = false;
+		scr_create_textbox("intro");
+		obj_player.image_xscale = -1;
+	} else {
+		
+		if (global.winOrLose = false) {
+			scr_create_textbox("outro lose");
+			instance_destroy(obj_player);
+		} else {
+			scr_create_textbox("outro")
+			obj_player.image_xscale = -1;
+		}
+	}
 }
 else if(room == rm_ballroom)
 {
