@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_pot",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_pot",
   "overriddenProperties":[],
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cookingPot",
-    "path":"sprites/spr_cookingPot/spr_cookingPot.yy",
+    "name":"spr_pot",
+    "path":"sprites/spr_pot/spr_pot.yy",
   },
   "spriteMaskId":null,
   "visible":true,

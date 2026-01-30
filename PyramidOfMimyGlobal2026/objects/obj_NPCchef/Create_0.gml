@@ -5,4 +5,3 @@
 event_inherited();
 
 text_id = "soup";
-spokenTo = true;

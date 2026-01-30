@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_barrel",
-    "path":"sprites/spr_barrel/spr_barrel.yy",
+    "name":"spr_wineBarrel",
+    "path":"sprites/spr_wineBarrel/spr_wineBarrel.yy",
   },
   "spriteMaskId":null,
   "visible":true,
