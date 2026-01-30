@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":0.17331065,
   "name":"snd_narration2",
   "parent":{
     "name":"5 Sounds",
