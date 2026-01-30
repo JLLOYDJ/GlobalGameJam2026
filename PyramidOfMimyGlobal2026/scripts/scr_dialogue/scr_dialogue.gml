@@ -277,6 +277,8 @@ function scr_game_text(_text_id) {
 			scr_text("You: I was giving the soup a good stirring, just how Le Don likes it!", "narr");
 			scr_text("Chef: Oui, but guests are not meant to be in the back!", "chef");
 			scr_text("Chef: Leave le cooking to me or Au revoir to invitation.", "chef");
+			global.winOrLose = true;
+			scr_options("Next", "end");
 			//go to ballroom trigger ending unless something else?
 			break;
 		
@@ -306,6 +308,8 @@ function scr_game_text(_text_id) {
 			scr_text("You: (Acting Drunk) Le Wine, Le Wine, it’s all I need.", "narr");
 			scr_text("Chef: Monsieur, you can’t be seen like this, go sort yourself out.", "chef");
 			scr_text("Chef: We wouldn’t want to kick le Monsieur out now.", "chef");
+			global.winOrLose = true;
+			scr_options("Next", "end");
 			//ballroom trigger ending unless something else
 			break;
 		case "winePos":
